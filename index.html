@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CarHeaven</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- site metas -->
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="Logo.svg" alt="CarHeaven">
+            <nav>
+                <ul class="nav-area">
+                    <li><a  href="index.html">Home</a></li>
+                        <li><a href="carHeavenAboutUs.html">Contact Us</a></li>
+                        <li><a href="carHeavencathalogue.html">Our cars</a></li>
+                        <li><a href="carHeavenReservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+            <div class="info">
+                <h5 style="padding-left: 5vw; text-decoration: #fff;">carheaven@gmail.com</h5>
+                <P style="padding: 0vw 0.5vw;">I</P>
+                <h5 style="padding-right: 5vw; text-decoration: #fff;">+212522908871</h5>
+            </div>
+            <a class="btn-area" href="#">Sign up</a>
+
+        </header>
+        <div id="brgMenu" onclick=showNavBar()>
+            <img id="brgMenuImg" src="brgMenu.jpg">
+        </div>
+        <div id="navRespID" class="navResp" style="display: none;">
+            <ul class="nav-areaRes">
+                <div class="hideX">
+                    <li style="text-align: right; color: white; margin-top: 5px; margin-right: 20px; font-size: 25px;" onclick=hideNavBar()>x</li>
+                </div>
+                <li class="secondChild"><a  href="carHeaven.html">Home</a></li>
+                    <li><a href="carHeavenAboutUs.html">Contact Us</a></li>
+                    <li><a href="carHeavencathalogue.html">Our cars</a></li>
+                    <li><a href="carHeavenReservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="childDiv">
+            <div class="LogoCarHeaven"></div>
+            <div class="textDscrp">
+                <span class="overText">Over 5000 client satisfied</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="btn-area" href="carHeavencathalogue.html">See our gallery</a>
+            </div>
+            <div class="wrapper">
+                <div class="item1"></div>
+                <div class="item1"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+        <div class="logoDown">
+            <img  src="Logo.svg" alt="CarHeaven">
+        </div>
+    
+    <!---footer---->
+    <footer class="footer">
+        <div class="footerHolder">
+            <img style="height: auto; justify-self: center;" src="Logo.svg" alt="CarHeaven">
+            <ul class="nav-area">
+                <li><a  href="carHeaven.html">Home</a></li>
+                    <li><a href="carHeavenAboutUs.html">Contact Us</a></li>
+                    <li><a href="carHeavencathalogue.html">Our cars</a></li>
+                    <li><a href="carHeavenReservation.html">Reservation</a></li>
+            </ul>
+            <p style="color: grey; text-align: center;margin-top: 10px;">all rights are reserved for carheaven.com (2021)</p>
+    </div>
+   
+    </footer>
+    <!---footer---->
+    <style>
+        #nav-areaRes{
+            visibility: hidden;
+        }
+    </style>
+    <script src="app.js"></script>
+    </body>
+
+</html>

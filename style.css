@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+body{
+    background-image: url(Web1920–1.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    height: 100%;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    cursor: url("cursor.png");
+}
+
+.nav-area{
+    list-style: none;
+}
+
+.nav-areaRes{
+    position: absolute;
+    background-color: #000;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    z-index: 5;
+    margin-top: -128px;
+}
+
+#brgMenu{
+    background-color:black ;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    display: none;
+}
+
+
+#brgMenuImg{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.secondChild{
+    margin-top: 50px;
+}
+
+
+.nav-areaRes li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    width: 100vw;
+    justify-self: center;
+
+}
+
+.nav-areaRes li a{
+    color: #fff;
+}
+
+.nav-areaRes li a:hover{
+    color: #ed3237;
+}
+
+.hideX{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+
+}
+
+.nav-area li a{
+    color: #fff;
+}
+
+.nav-area li a:hover{
+    color: #ed3237;
+}
+.btn-area{
+    color: #fff;
+    background: #ed3237;
+    padding: 10px 36px;
+    border-radius: 24.5px;
+    box-shadow: 0px 0px 22px #ed3237;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btnArea2{
+    color: #fff;
+    background: #ed3237;
+    padding: 10px 36px;
+    border-radius: 24.5px;
+    box-shadow: 0px 0px 22px #ed3237;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h5{
+    color: #fff;
+    font-weight: lighter;
+}
+
+.info p{
+    color: #fff;
+    font-weight: lighter;
+}
+
+
+
+.LogoCarHeaven{
+    width: 66.4vw;
+    height: 11vw;
+    background-image: url(Logo.svg);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    left: 7vw;
+}
+
+.childDiv{
+    margin-top: 128px;
+    margin-left: 7vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    height: 445px;
+    margin-top: -40px;
+    border: 1px solide #ddd;
+    display: flex;
+    width: 1035px;
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+
+.wrapper .item{
+    min-width: 302px;
+    height: 404px;
+    line-height: 380px;
+    text-align: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.wrapper .item1{
+    min-width: 180px;
+    height: 308px;
+    line-height: 308px;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 2px;
+}
+
+.textDscrp{
+    position: absolute;
+    left: 125px;
+    width: 610px;
+    margin-top: 227px;
+}
+
+.textDscrp p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 200;
+}
+
+.overText{
+font-family: Montserrat;
+font-weight: bold;
+font-size: 45px;
+text-align: left;
+color: #f0f2fe;
+display: flex;
+justify-self: flex-start;
+}
+
+.bodyCathalogue{
+    background-image: url(Bg-cathalogue.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 17px;
+}
+.bodyContactUs{
+    background-image: url(BgContactUs.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.ourCatImg{
+    width: 80vw;
+    height: auto;
+}
+
+.vContainer{
+    padding: 0vw 10vw;
+}
+
+    .cardHolder{
+    width: 304px;
+    height: 342px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.picHolder{
+    width: auto;
+    height: 203px;
+    border-radius: 12px 12px 0px 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+.childDivCat{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+.btnRent{
+    margin-top: 7px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infoHolder{
+    padding: 10px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.picLogo{
+    width: 45%;
+    height: auto;
+    padding: 10px 15px;
+}
+
+.logoDown{
+    margin-right: 3vw;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.contParnt{
+    width: 97vw;
+    height: auto;
+    padding-left: 18vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    perspective: 800px;
+}
+
+.CUHolder{
+    width: 475px;
+    height: 533px;
+    background-color: #fff;
+    padding-left: 2vw;
+    padding-top: 5vh;
+    border-radius: 25px;
+    padding-right: 18px;
+}
+
+
+.CUtext {
+margin-bottom: 40px; 
+font-size: 62px;
+}
+
+.CUtextP{
+    margin-bottom: 40px; 
+    font-size: 16px;
+    color: dimgray;
+}
+
+
+
+/*---------input-----------*/
+
+.inputWrapper .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+  }
+  .inputWrapper .input-data input{
+    height: 100%;
+    width: 90%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    outline: none;
+  }
+  .input-data input:focus ~ label,
+  .input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #ed3237;
+  }
+  .inputWrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .input-data .underline{
+    position: absolute;
+    height: 2px;
+    width: 113%;
+    bottom: 0;
+  }
+  .input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 80%;
+    background: #ed3237;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before{
+    transform: scaleX(1);
+  }
+
+.inputHolder{
+    height: 202px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+
+.CUbtnHolder{
+    height: 105px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: Opx;
+}
+
+
+
+.flipCard{
+    width: 347px;
+    height: 423px;
+    background: #1e1e20;
+    margin-right: 66px;
+    color: #fff;
+    padding:40px 20px;
+    
+}
+
+
+.CUInfo{
+    width: 347px;
+    height: 423px;
+    background: #1e1e20;
+    margin-right: 66px;
+    color: #fff;
+    padding:40px 20px;
+}
+.CUSubm{
+    position: relative;
+    width: 347px;
+    height: 423px;
+    background: #1e1e20;
+    margin-right: 66px;
+    color: #fff;
+    padding:40px 20px;
+}
+
+.reservationCont{
+    width: 60vw;
+    height: fit-content;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+    padding: 2vw 0vh 2vw 10vh;
+    flex-basis: 60%;
+}
+.checkCont{
+    flex-basis: 30%;
+    padding: 1vw 1vw;
+    align-self: stretch;
+    min-width: 300px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+}
+
+.checkCont2{
+    padding: 1vw 3vw;
+}
+
+.textRes{
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+.vehiculeHolder{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.chooseCard{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 38px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 6px #ed3237;
+    margin-right: 22px;
+    margin-top: 18px;
+}
+
+.chooseCard h5{
+    margin: 0px 5px;
+    font-weight: normal;
+}
+
+.chooseImg{
+    width: 66px;
+    height: 38px;
+    border-radius: 6px;
+}
+
+.textRes.textRes:second-chil {
+    margin-top: 20px;
+}
+
+.chooseFuel{
+    width: 145px;
+    height: auto;
+
+}
+
+.fuelCont{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.fuelCont img{
+    width: auto;
+    height: auto;
+}
+
+.activeFuel img{
+    filter: saturate(#000);
+}
+
+#imgCheckCont{
+    
+    background-position: center;
+    background-size: cover;
+    width: 95%;
+    height: 200px;
+    margin: 2.5% 2.5%;
+    border-radius: 14px;
+}
+
+#btnArea{
+    width: 180px;
+}
+
+#btnDiv{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.flipCard {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    transform: rotate3d(0, 1, 0, 0deg);
+}
+
+/*--------------- footer ------------------*/
+.footer{
+    background-color: #000;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+.footerHolder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+
+
+
+
+
+/*--------------- footer ------------------*/
+
+
+
+
+
+@media(max-width:1362px){
+    .info{
+        display: none;
+    }
+}
+
+@media(max-width:970px){
+    .navResp{
+        display: none;
+    }
+
+    #brgMenu{
+        display: block;
+    }
+
+    header{
+        display: none;
+    }
+
+
+    .navResp{
+        display: block;
+    }
+
+    .CUHolder {
+        width: 475px;
+        height: 606px;
+        background-color: #fff;
+        padding-left: 4vw;
+        padding-top: 1vh;
+        border-radius: 25px;
+        padding-right: 4vw;
+    }
+
+
+    .childDiv {
+        margin-top: 25px;
+        margin-left: 4vw;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .contParnt {
+        width: 97vw;
+        height: auto;
+        padding-left: 4vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        perspective: 800px;
+    }
+
+
+
+    .reservationCont {
+        /* width: 60vw; */
+        height: fit-content;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+        padding: 2vw 0vh 2vw 1vh;
+        flex-basis: 100%;
+    }
+}
+
+
+

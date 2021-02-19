@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107" height="25" viewBox="0 0 107 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed3237;
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 19px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #ed3237;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_14" data-name="Groupe 14" transform="translate(-174.137 -317.032)">
+    <text id="Car" class="cls-1" transform="translate(174.137 336.032)"><tspan x="0" y="0">Car</tspan></text>
+    <text id="Heaven" class="cls-2" transform="translate(207.137 336.032)"><tspan x="0" y="0">Heaven</tspan></text>
+  </g>
+</svg>

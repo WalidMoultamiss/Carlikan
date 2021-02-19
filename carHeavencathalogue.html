@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CarHeaven our cars</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <!-- site metas -->
+</head>
+
+<body>
+    <div class="bodyCathalogue">
+        <header>
+            <img class="logo" src="Logo.svg" alt="CarHeaven">
+            <nav>
+                <ul class="nav-area">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="carHeavenAboutUs.html">Contact Us</a></li>
+                    <li><a href="carHeavencathalogue.html">Our cars</a></li>
+                    <li><a href="carHeavenReservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+            <div class="info">
+                <h5 style="padding-left: 5vw; text-decoration: #fff;">carheaven@gmail.com</h5>
+                <P style="padding: 0vw 0.5vw;">I</P>
+                <h5 style="padding-right: 5vw; text-decoration: #fff;">+212522908871</h5>
+            </div>
+            <a class="btnArea2" href="#">Sign up</a>
+        </header>
+        <div id="brgMenu" onclick=showNavBar()>
+            <img id="brgMenuImg" src="brgMenu.jpg">
+        </div>
+        <div id="navRespID" class="navResp" style="display: none;">
+            <ul class="nav-areaRes">
+                <div class="hideX">
+                    <li style="text-align: right; color: white; margin-top: 5px; margin-right: 20px; font-size: 25px;"
+                        onclick=hideNavBar()>x</li>
+                </div>
+                <li class="secondChild"><a href="carHeaven.html">Home</a></li>
+                <li><a href="carHeavenAboutUs.html">Contact Us</a></li>
+                <li><a href="carHeavencathalogue.html">Our cars</a></li>
+                <li><a href="carHeavenReservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="vContainer">
+            <img class="ourCatImg" src="Our-cathalogue.svg">
+            <div class="childDivCat">
+            </div>
+        </div>
+
+
+        <div></div>
+    </div>
+</body>
+<script>
+
+    function showNavBar() {
+        document.getElementById("navRespID").style.display = "block";
+        document.getElementById("brgMenu").style.display = "none";
+    }
+    function hideNavBar() {
+        document.getElementById("navRespID").style.display = "none";
+        document.getElementById("brgMenu").style.display = "block";
+    }
+
+    let firebaseConfig = {
+        apiKey: "AIzaSyCrFiDFiE8Rk7ZNNaX6RgI7HBrU39FKlM0",
+        authDomain: "niggahome.firebaseapp.com",
+        databaseURL: "https://niggahome-default-rtdb.firebaseio.com",
+        projectId: "niggahome",
+        storageBucket: "niggahome.appspot.com",
+        messagingSenderId: "430243012198",
+        appId: "1:430243012198:web:f78788d612e753a9e2d7a7",
+        measurementId: "G-X9SLFRDFMC"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    let db = firebase.database().ref('cars');
+
+    db.on("value", (snap) => {
+        let data = snap.val()['-MTpik9BKKIN0Afs-hyb'];
+        function render(src, name, info) {
+            return `<div class="cardHolder">
+    <div class="picHolder" style="background-image: url('${src}');">
+      <img class="picLogo" src="Logo.svg">
+    </div>
+    <div class="infoHolder">
+      <h4 class="carName">${name}</h4>
+      <p class="carInfo">${info}</p>
+      <div class="btnRent">
+        <a class="btnArea2" href="carHeavenReservation.html">Rent Now</a>
+      </div>
+    </div>
+  </div>`;
+        }
+        let childDivCat = document.querySelector(".childDivCat")
+        for (const key in data) {
+            data[key].map(p => childDivCat.insertAdjacentHTML('afterbegin', render(p.src, p.name, p.desc)));
+        }
+
+
+    });
+
+
+
+
+
+</script>
+
+</html>
