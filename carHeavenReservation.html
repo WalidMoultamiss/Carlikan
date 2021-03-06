@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>CarHeaven</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="CarRed.png">
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -37,18 +38,22 @@
         <div id="navRespID" class="navResp" style="display: none;">
             <ul class="nav-areaRes">
                 <div class="hideX">
-                    <li style="text-align: right; color: white; margin-top: 5px; margin-right: 20px; font-size: 25px;" onclick=hideNavBar()>x</li>
+                    <li class="hideXFrst" style="text-align: right;
+                    color: white;
+                    margin-top: 5px;
+                    margin-right: 20px;
+                    font-size: 25px;
+                    padding-right: 25px;
+                    padding-top: 40px;" onclick=hideNavBar()>x</li>
                 </div>
-                <li class="secondChild"><a  href="carHeaven.html">Home</a></li>
+                <li class="secondChild"><a  href="index.html">Home</a></li>
                     <li><a href="carHeavenAboutUs.html">Contact Us</a></li>
                     <li><a href="carHeavencathalogue.html">Our cars</a></li>
                     <li><a href="carHeavenReservation.html">Reservation</a></li>
             </ul>
         </div>
         <div class="vContainer">
-            <img style="
-                            width: 78vw;height: auto;
-                        " src="Reservation.png">
+            <img style="width: 78vw;height: auto;" src="Reservation.png">
             <div class="childDivCat">
                 <div class="reservationCont">
                     <div class="textRes">Choose a vehicule</div>
@@ -102,7 +107,7 @@
                     </div>
                     <div class="textRes" style="padding-top: 30px;">Choose fuel</div>
                     <div class="fuelCont">
-                        <img id="essence" class="chooseFuel" src="essense.png" alt="chose fuel" onclick="clicker(id)">
+                        <img id="essence" class="chooseFuel" src="essense.png" alt="chose fuel" onclick="clicker(id)" onfocus="focusOn()">
                         <img name="diesel" id="diesel" class="chooseFuel" src="diesel.png" alt="chose fuel"
                             onclick="clicker(id)">
                         <img name="electric" id="electric" class="chooseFuel" src="electric.png" alt="chose fuel"
@@ -122,23 +127,25 @@
                     </div>
                     <div id="btnDiv">
                         <div id="btnArea">
-                            <input type="submit" id="btnClick" class="btnArea2" onclick="daysCalc ()" href="#textPrice4">
+                            <input type="submit" id="btnClick" class="btnArea2" onclick="daysCalc ()" value="Submit">
                         </div>
                     </div>
                 </div>
 
                 <div class="checkCont" id="checkCountID">
 
-                    <div id="imgCheckCont"></div>
+                    <div id="imgCheckCont">
+                        <img id="trnsType" src="">
+                    </div>
                     <div class="checkCont2">
                         <h4 style=" color: grey;">Price per day:</h4>
                         <h2 id="textPrice">.</h2>
                         <h4 style="margin-top: 8px; color: grey;">Rent days:</h4>
                         <h2 id="textPrice2">.</h2>
-                        <h4 style="margin-top: 8px; color: grey;">Transmition type:</h4>
+                        <h4 style="margin-top: 8px; color: grey;">fuel type:</h4>
                         <h2 id="textPrice3">.</h2>
                         <div style="background-color: rgb(199, 199, 199); width: 100%;height: 2px; margin-bottom: 20px;"></div>
-                        <span style="margin-top: 8px; color: grey;">Price: </span>
+                        <span style="margin-top: 10px; color: grey;">Price: </span>
                         <span style="font-size: larger;" id="textPrice4">.</span>
                         <span>$</span>
                         <span></span>

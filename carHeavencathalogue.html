@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>CarHeaven our cars</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="CarRed.png">
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -38,7 +39,7 @@
         <div id="navRespID" class="navResp" style="display: none;">
             <ul class="nav-areaRes">
                 <div class="hideX">
-                    <li style="text-align: right; color: white; margin-top: 5px; margin-right: 20px; font-size: 25px;"
+                    <li style="text-align: right; color: white; margin-top: 5px; margin-right: 50px; font-size: 33px;"
                         onclick=hideNavBar()>x</li>
                 </div>
                 <li class="secondChild"><a href="carHeaven.html">Home</a></li>
@@ -81,7 +82,6 @@
 
     firebase.initializeApp(firebaseConfig);
     let db = firebase.database().ref('cars');
-
     db.on("value", (snap) => {
         let data = snap.val()['-MTpik9BKKIN0Afs-hyb'];
         function render(src, name, info) {
